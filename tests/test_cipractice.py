@@ -8,5 +8,6 @@ def test_greeting():
 
 @given(s=text())
 @example(s='')
-def test_decode_inverts_encode(string):
+
+def test_decode_inverts_encode(s):
 	assert cipractice.decode(cipractice.encode(s)) == s
